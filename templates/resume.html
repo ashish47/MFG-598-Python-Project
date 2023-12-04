@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ profile_data['name'] }}'s Resume</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #333;
+            background-color: #f8f8f8;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .resume {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .resume-header {
+            background-color: #2a3f54;
+            color: #fff;
+            padding: 20px 40px;
+            text-align: center;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .resume-header h1 {
+            margin: 0;
+        }
+
+        .resume-header p {
+            margin: 5px 0 0;
+        }
+
+        .resume-section {
+            padding: 20px 40px;
+            border-bottom: 1px solid #eaecef;
+        }
+
+        .resume-section:last-child {
+            border-bottom: 0;
+        }
+
+        .resume-section h2 {
+            margin-top: 0;
+            color: #2a3f54;
+        }
+
+        .resume-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .resume-list li {
+            margin-bottom: 10px;
+        }
+
+        .resume-list h3 {
+            margin-bottom: 0;
+        }
+
+        .resume-list p {
+            margin: 5px 0 10px;
+        }
+
+        .skills-list {
+            padding: 0;
+        }
+
+        .skills-list li {
+            margin-bottom: 5px;
+        }
+
+        .back-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding-top: 20px;
+        }
+
+        #backButton {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back-container">
+        <button id="backButton">Go Back</button>
+
+        <script>
+            document.getElementById('backButton').addEventListener('click', function () {
+                window.history.back();
+            });
+        </script>
+    </div>
+    <div class="resume">
+        <div class="resume-header">
+            <h1>{{ profile_data['name'] }}</h1>
+            <p>Email: {{ profile_data['email'] }} | Phone: {{ profile_data['phone'] }} | Location: {{
+                profile_data['place'] }}</p>
+        </div>
+
+        <div class="resume-section">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                {% for category, skills in profile_data['skills'].items() %}
+                <li><strong>{{ category }}:</strong> {{ skills }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="resume-section">
+            <h2>Work Experience</h2>
+            <ul class="resume-list">
+                {% for experience in profile_data['workExperience'] %}
+                <li>
+                    <h3>{{ experience['title'] }} - {{ experience['name'] }}</h3>
+                    <p>{{ experience['date'] }}</p>
+                    <ul>
+                        {% for point in experience['points'] %}
+                        <li>{{ point }}</li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="resume-section">
+            <h2>Projects</h2>
+            <ul class="resume-list">
+                {% for experience in profile_data['projects'] %}
+                <li>
+                    <h3>{{ experience['name'] }}</h3>
+                    <p>{{ experience['date'] }}</p>
+                    <ul>
+                        {% for point in experience['points'] %}
+                        <li>{{ point }}</li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="resume-section">
+            <h2>Education</h2>
+            <ul class="resume-list">
+                {% for education in profile_data['education'] %}
+                <li>
+                    <h3>{{ education['uniAndCourse'][0] }}</h3>
+                    <p>{{ education['date'] }}</p>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
