@@ -2,7 +2,8 @@ from flask import Flask, render_template, request, jsonify
 import os, json, glob
 
 app = Flask(__name__)
-UPLOAD_FOLDER = './uploadStore'
+CWD = os.getcwd()
+UPLOAD_FOLDER = os.path.join(CWD, 'uploadStore')
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @app.route('/listNames', methods=['GET'])
@@ -26,6 +27,9 @@ def get_json(name):
 def get_json_files():
     
     # list all files in UPLOAD_FOLDER
+    if not os.path.exists(UPLOAD_FOLDER):
+    # Create the directory if it doesn't exist
+        os.makedirs(UPLOAD_FOLDER)
     files = [f.replace('.json','') for f in os.listdir(UPLOAD_FOLDER) if os.path.isfile(os.path.join(UPLOAD_FOLDER, f))]
     # Render a template and pass the variables to it
     return render_template('template.html', file_names=files)
@@ -48,8 +52,6 @@ def upload_json():
 
     file = request.files['file']
 
-    # If the user does not select a file, the browser submits an
-    # empty file without a filename.
     if file.filename == '':
         return jsonify({"error": "No selected file"}), 400
     if file:
