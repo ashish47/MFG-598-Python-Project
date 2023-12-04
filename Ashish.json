@@ -1,0 +1,62 @@
+{
+    "name": "Ashish Chandrashekar",
+    "email": "oneashishc@gmail.com",
+    "phone": "623-326-4054",
+    "place": "Phoenix, Arizona",
+    "skills": {
+        "expertise": "C++, Python (Flask, PyTorch, Pandas), Golang, YAML, Apigee, REST, gRPC, HTML, CSS,Javascript, Typescript (React, Node, Express, Next), Redux, Kafka, GraphQL, AWS (Lambda, EC2, DynamoDB, S3), GCP (BigQuery), MySQL, PostgreSQL, MongoDB, Cassandra, Splunk, Elasticsearch, Linux, Docker, Kubernetes, CI/CD, GitHub Actions, Jenkins, SonarQube, Gherkin (Cucumber), Design Patterns, and Agile (Jira, Confluence).",
+        "Advanced": "Fintech, Java (Sprint Boot, Maven), Selenium, Redis, React Native, Terraform, and Google Analytics.",
+        "softSkills": "Strong Communication, Cross-Team Collaboration, Critical Thinking, Ownership, and Mentorship."
+    },
+    "workExperience": [
+        {
+            "name": "FTC Solar",
+            "date": "06/2020 - 08/2022",
+            "title": "Senior Software Engineer",
+            "points": [
+                "Led product definition, launch, and long-term vision for initiatives across the company, contributing with architecture, design patterns, reliability, and scaling techniques.",
+                "Engineered a robust, high-performance mechanism for the interaction/processing of 100+ nodes with the mainframe, a contribution that earned a nomination for the Presidential Award.",
+                "Constantly monitoring and improving front-end performance using industry best practices like code-splitting, boosting average page load speeds by 60%. Built pixel-perfect interfaces.",
+                "Collaborating across teams to reduce production bugs by 25% in 6 months by packaging Python files using Poetry, pipelining with Jenkins, and containerizing applications using docker",
+                "Executed a command processing strategy from simultaneous data from multiple nodes using Pub/Sub, enabling direct communication from a node with the UI, bypassing the backend.",
+                "Proposed and implemented a proactive self-repairing strategy with real-time data for predictive upkeep, minimizing manual intervention, and leading to monthly cost savings of over 20%.",
+                "Integrated and deployed remote management, monitoring, and update system to more than 300 nodes using Mender Open Source software on a DigitalOcean server."
+            ]
+        },
+        {
+            "name": "Raptor Design",
+            "date": "05/2018 - 05/2020",
+            "title": "Software Engineer",
+            "points": [
+                "Developed a Full-Stack application including over 150 endpoints to interface with a web UI.",
+                "Conceptualized and engineered a comprehensive application facilitating dataflow and control flow between sensors and control instruments, successfully meeting an ambitious deadline.",
+                "Led API development, owned the repo(s), managed merge requests, and was accountable for quality."
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "FindMyRoom",
+            "date": "08/2022- 09/2023",
+            "points": [
+                " Deployed a stable version of the web marketplace in 4 months and contributed to a steady increase in First-year revenue by at least 10% every month.",
+                " Integrated a plethora of third-party services like Google Maps API, leaflet.js, Facebook API, and Stripe.",
+                "Responsible for research, development, and documentation of the migration process from a monolithic application to micro-service on the backend and CSR(React.js ) to SSR (Next.js) on the front end."
+            ]
+        }
+    ],
+    "education": [
+        {
+            "uniAndCourse": [
+                "Master’s in Artificial Intelligence, Arizona State University"
+            ],
+            "date": "08/2022 - Present"
+        },
+        {
+            "uniAndCourse": [
+                "Bachelor’s in Computer Science and Engineering, National Institute of Technology Karnataka"
+            ],
+            "date": "07/2015 - 05/2019"
+        }
+    ]
+}

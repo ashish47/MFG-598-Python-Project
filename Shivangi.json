@@ -1,0 +1,63 @@
+{
+    "name":"Shivangi Sharma",
+    "email":"sharmashivangi1010@gmail.com",
+    "phone":"872-985-8761",
+    "place":"New York, NY",
+    "skills":{
+       "expertise":"Python, SQL, Power BI, Tableau, R, SAS, PySpark, NoSQL, AWS, Grafana, Google Analytics, TensorFlow, Keras, Kubernetes, Big Data, Machine Learning, Deep Learning, Docker, Github, Scikit-Learn, NumPy, SciPy, Pandas, Neural Networks, PyTorch, ML Ops, A/B testing, RStudio, Rshiny, RedShift, AI/ML models, key performance indicators (KPI), Google Big Query, Azure.",
+       "Advanced":"InfluxDB, Rest API’s, GraphDB, Neo4j, Computer Vision, Transformer Architecture, NLP.",
+       "softSkills":"Technical Leadership & Mentorship, Communication, Problem-solving, Collaboration, Adaptability, Self-Starter."
+    },
+    "workExperience":[
+       {
+          "name":"CCC Intelligent Solutions",
+          "date":"06/2023 - 09/2023",
+          "title":"Data Science Intern - R&D",
+          "points":[
+             "Implemented ETL processes using linear regression, multivariate analysis & classification, revealing unique trends that AI missed, slashing issue of total loss insurance claims by 15%.",
+             "Employed Snowflake and Databricks for real-time analytics, bolstering data-driven decision-making for the stakeholders.",
+             "Refined deep learning algorithms for complex claims handling, boosting model performance by 30%.",
+             "Curbed computational overhead upto 18% by deploying the XgBoost Model on Kubernetes.",
+             "Collaborated closely with business partners to gather detailed business requirements, to develop AI-integrated Tableau dashboards improving e-commerce and customer satisfaction through advanced data diagnostics analysis."
+          ]
+       },
+       {
+          "name":"AVL",
+          "date":"03/2019 - 09/2022",
+          "title":"Senior Data Science Engineer",
+          "points":[
+             "Led a team of 8 peers in the development of an Energy Management Solution (DAKSH) generating $4M in additional annual revenue showcasing Project Management skills like scheduling, budgeting, and resource planning.",
+             "Instituted NLP-based classifiers using NLTK and spaCy to extract and analyze textual data from maintenance logs, repair reports, and user manuals improving equipment troubleshooting by 30%.",
+             "Drove statistical analysis and data cleansing using PySpark and SQL improving data accuracy by 15% and reducing analysis time by 20% for engine performance optimization.",
+             "Produced interactive Power BI dashboards with DAX Expressions, improving real-time KPI monitoring at AVL and reducing data retrieval time by 25%.",
+             "Leveraged Generative AI models & signal processing to predict engine component failures (MCSA), enhancing the reliability and longevity of electrical equipment and reducing downtime by 10%.",
+             "Honored spot award in Client Engagement for proven track record in actively and consistently supporting all efforts to simplify and enhance the customer experience."
+          ]
+       }
+    ],
+    "projects":[
+       {
+          "name":"Cybersecurity Data Analysis and Threat Mitigation",
+          "date":"08/2022- 09/2023",
+          "points":[
+             "Employed Teradata for data warehousing security-related data, utilized Alteryx for data preprocessing, data cleaning and feature engineering, performed ETL using complex SQL queries.",
+             "Created visualization dashboard using Power BI to communicate findings effectively with the Management.",
+             "Identified and mitigated security threats proactively by 24%, bolstering the university's cybersecurity posture."
+          ]
+       }
+    ],
+    "education":[
+       {
+          "uniAndCourse":[
+             "Masters of Science in Information Technology (Concentration: Data Science, Statistics, Visualization), Northwestern University"
+          ],
+          "date":"09/2022 - Present"
+       },
+       {
+          "uniAndCourse":[
+             "Bachelors in Electronics and Communication Engineering, Uttar Pradesh Technical University"
+          ],
+          "date":"08/2015 - 06/2019"
+       }
+    ]
+ }
