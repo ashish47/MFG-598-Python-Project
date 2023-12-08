@@ -1,7 +1,7 @@
 # MFG-598-Python-Project
 
 **Video Link (Website Available through the Internet)**
-https://drive.google.com/file/d/15xmmw75PpFoW5g5Vc-TOrmglQxrqiwZd/view?usp=sharing
+- https://drive.google.com/file/d/15xmmw75PpFoW5g5Vc-TOrmglQxrqiwZd/view?usp=sharing
 
 **Installation**
 - pip3 install flask
